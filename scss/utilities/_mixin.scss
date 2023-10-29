@@ -1,0 +1,24 @@
+@mixin flex($display,$horizontal,$vertical){
+    display:$display;
+    justify-content:$horizontal;
+    align-items:$vertical;
+}
+
+
+
+@mixin flex-direccion($display,$direccion,$horizontal,$caja){
+    display:$display;
+    flex-direction:$direccion;
+    justify-content:$horizontal;
+    flex-wrap:$caja ;
+}
+
+@mixin flex-soporte($display,$horizontal,$cont,$direccion,$caja){
+    display:$display;
+    justify-content:$horizontal;
+    align-content:$cont;
+    flex-direction:$direccion;
+    flex-wrap:$caja;
+}
+
+

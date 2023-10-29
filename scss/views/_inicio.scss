@@ -1,0 +1,26 @@
+/* Hero o portada/bienvenido/introduccion */
+#Hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .hero-title {
+        text-align: center;
+        font-size: 3.12rem;
+        font-weight: 700;
+        color:map-get($colores,primario);
+        margin-top: 180px;
+    }
+    .hero-text {
+        text-align: center;
+        font-size: 1.87rem;
+        color: $color-tipografia;
+        margin-top: 20px;
+    }
+}
+
+
+
+

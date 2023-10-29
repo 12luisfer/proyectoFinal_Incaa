@@ -1,0 +1,63 @@
+/* Contacto */
+#Contact {
+    @include flex-direccion(flex,column,center,wrap);
+    margin-top: 70px;
+    max-width: map-get($porcentajes,fase10); 
+    background-color: map-get($colores,sextario);
+    color: $color-tipografia;
+    gap: 30px;
+    margin-top: 0px;
+    h1 {
+      text-align: center;
+      font-size: 2.25rem;
+      font-weight: 900;
+      margin-top: 150px;
+      color:map-get($colores,primario);
+    }
+    .info-container {
+      @extend%flex-direccion;
+      gap: 30px;
+      .contact-info-container {/*contenedor de todo mi info, menos el "contacto(H1)"*/
+        @extend%flex;
+        gap: 80px;
+        .info-column{
+          background-color: map-get($colores,terciario-bold);
+          border:$borde;
+          h3 {
+            @include flex(flex,center,center);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+          }
+          p,a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            text-decoration: $decoracion;
+            color: $color-tipografia;
+            margin-bottom: 15px;
+          }
+          .icon-info {
+            font-size: 1.87rem;
+            text-decoration: $decoracion;
+            color: $color-iconos;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .mapa {
+      width: 40%;
+      margin: 0 auto;
+      display: block;
+      border-radius: 8px;
+      border: $borde;
+      iframe {
+        width: map-get($porcentajes,fase10);
+        height: 200px;
+        border-radius: 10px;
+        }
+    }
+  
+  }
+

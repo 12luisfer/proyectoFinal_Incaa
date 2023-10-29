@@ -1,0 +1,22 @@
+/* Acerca de nosotros  */
+#About {
+    width:  map-get($porcentajes,fase10);
+    @include flex(flex,center,center);
+    flex-direction: column;
+    flex-wrap: wrap;
+    .about-title {
+      font-size: 2.5rem;
+      text-align: center;
+      color: map-get($colores,primario);
+      margin-top: 150px;
+      
+    }
+    .about-text {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: 30px;
+      color: $color-tipografia;
+      
+    }
+  }
+

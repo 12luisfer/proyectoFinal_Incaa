@@ -1,0 +1,17 @@
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-direccion{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+%flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

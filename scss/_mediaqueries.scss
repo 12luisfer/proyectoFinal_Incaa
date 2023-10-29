@@ -1,0 +1,374 @@
+/* Responsive Design*/
+/* 1200px */
+@media (max-width: 1200px) {
+    /* animacion translate para cuando se utilice el check del cart-toggle */
+    /* creo la animación */
+    @keyframes Translate {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50%);
+      }
+    }
+    /* Uso la animación  */
+    #cart-toggle:checked + .cart {
+      animation: Translate 2s;
+    }
+  .icon {  /*acomodo mi logo de login*/
+    margin: 0 3px;
+    background-color:map-get($colores,sextario);
+    color: map-get($colores,primario);
+    font-size: 1.56rem;
+    cursor: pointer;
+  }
+    .card-img {
+      @include flex(flex,center,center);
+      width: 11rem;
+    }
+    .cart-item img {
+      width: 5rem;
+    }
+    .quantity-handler { /*contenedor del + y -*/
+      @include flex(flex,center,center);
+      padding: 2px 5px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 1px map-get($colores,cuartenario);
+      color:$color-tipografia;
+      font-weight: 400;
+    }
+    .item-quantity {      /*1 del carrito*/
+      @include flex(flex,center,center);
+      color: $color-tipografia;
+      font-size: 1rem;
+    }
+    .up {             /*+ del carrito*/
+      font-size: 1rem;
+      background-color: map-get($colores,sextario);
+      border: 1px solid map-get($colores,cuartenario);
+    }
+    .down {  /**/
+      font-size: 1rem;
+      background-color: map-get($colores,sextario);
+      border: 1px solid map-get($colores,cuartenario);
+    }
+    .divider {
+      margin-top: 20px;
+      border: 0.5px solid map-get($colores,cuartenario);
+    }
+    .cart-total {
+      @include flex(flex,space-between,center)
+    }
+    .cart-total p {   /*texto"total:"*/
+      color: $color-tipografia;
+      font-weight: 700;
+    }
+    .cart-total span {  /*el precio total*/
+      color: map-get($colores,primario);
+      font-weight: 400;
+      font-size: 18px;
+    }
+    .btn-add {  /*boton comprar*/
+      @include flex(flex,center,center);
+      padding: 2px 5px;
+      margin: 10px 0;
+      border-radius: 50px;
+      box-shadow: 2px 2px 2px 1px map-get($colores,primario);
+      font-size: 1.37rem;
+      font-weight: 400;
+      background-color: map-get($colores,sextario);
+      color: $color-tipografia;
+    }
+  }
+  /* 992px */
+  @media (max-width: 992px) {
+    .menu-label i {
+      display: block;
+    }
+    .navbar-list {
+      width: 50%;
+      height: calc(80vh - 150px);
+      padding: 0 65px;
+      background-color:  map-get($colores,sextario);
+      position: absolute;
+      top: 150px;
+      flex-direction: column;
+      opacity: 0;
+      z-index: 7;
+      left: 0;
+      top: 11.25rem;
+      border-radius: 8px;
+    }
+    #menu-toggle:checked + .navbar-list {
+      opacity: 1;
+    }
+    /* animación translate para cuando se utilice el check del menu-toggle */
+    /* Creo la animación */
+    @keyframes TranslateX {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50%);
+      }
+    }
+    /* Uso la animación  */
+    #menu-toggle:checked + .navbar-list {
+      animation: TranslateX 2s;
+    }
+    /* animacion translate para cuando se utilice el check del cart-toggle */
+    /* creo la animación */
+  
+    @keyframes Translate-Cart {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50%);
+      }
+    }
+    /* Uso la animación  */
+    #cart-toggle:checked + .cart {
+      animation: TranslateX 2s;
+    }
+    .card-img {
+      width: 10rem;
+    }
+    .cart-item img {
+      width: 7rem;
+    }
+    .mapa {
+      width: 70%;
+    }
+    .mapa iframe {
+      height: 400px;
+    }
+    .cont-service {
+      max-width: 22%;
+    }
+    .icon-service {
+      font-size: 4rem;
+    }
+    .mapa iframe {
+      height: 350px;
+    }
+  }
+  /* 827px */
+  @media (max-width: 827px) {
+    .link {
+      width: 6rem;
+      margin: 10px;
+    }
+    .link > a {
+      font-size: 1.12rem;
+    }
+    .cont-services {
+      max-width: map-get($porcentajes,fase10);
+      @include flex(flex,center,center);
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  }
+  /* 768px */
+  @media (max-width: 768px) {
+    /*  logo */
+    .logo {
+      width: 8.12rem;
+      height: 6.25rem;
+    }
+    /* seccion hero o portada */
+    .hero-title {
+      font-size: 2.25rem;
+    }
+    .hero-text {
+      font-size: 1.37rem;
+    }
+    /* seccion acerca de  */
+    .about-title {
+      font-size: 1.87rem;
+    }
+    .about-text {
+      font-size: 1.37rem;
+    }
+    /* categorias */
+    .categorias > h2 {
+      font-size: 1.87rem;
+    }
+    .categorias-container > a {
+      font-size: 1.12rem;
+    }
+    /* cards */
+    .card-title {
+      font-size: 1.37rem;
+    }
+    .title-cont {
+      font-size: 1.67rem;
+    }
+    .item-price {
+      font-size: 1.2rem;
+    }
+    .card-btn {
+      font-size: 1.37rem;
+    }
+    /* seccion soporte */
+    .cont-services {
+      gap: 12px;
+    }
+    .service-title {
+      font-size: 1.37rem;
+    }
+    /* seccion contacto */
+    #Contact h2 {
+      font-size: 2.25rem;
+    }
+    .info-column p,
+    .info-column a {
+      font-size: 1.25rem;
+    }
+    .mapa iframe {
+      height: 300px;
+    }
+    .copyrigth-text {
+      font-size: 1.12rem;
+    }
+  }
+  /* desde 320px  hasta 475px */
+  @media (min-width: 320px) and (max-width: 475px) {
+    /* items del carrito */
+    .cart {
+      width: 11rem;
+    }
+    .cart > h2 {
+      width: 6rem;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    .cart-item {
+      width: 6rem;
+    }
+    .item-title {
+      width: 6rem;
+      font-size: 0.95rem;
+      text-align: left;
+    }
+    .item-bid {
+      width: 6rem;
+      font-size: 1rem;
+      text-align: left;
+    }
+    .item-price {
+      font-size: 1.12rem;
+    }
+    .item-handler {
+      width: 4rem;
+    }
+    .divider {
+      margin-top: 10px;
+      border: 0.5px solid orangered;
+    }
+    .cart-total {
+      @include flex(flex,space-around,baseline);
+
+      margin: 5px;
+      gap: 5px;
+    }
+    .cart-total p {
+      color: #fff;
+      font-size: 1.12rem;
+      font-weight: 700;
+    }
+    .cart-total span {
+      @include flex(flex,center,center);
+      color:$color-tipografia;
+      font-weight: 600;
+      font-size: 1.12rem;
+    }
+    .btn-add {
+      @include flex(flex,center,center);
+      padding: 2px 5px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px 1px orangered;
+      background-color: map-get($colores,sextario);
+      color: $color-tipografia;
+      font-size: 1.37rem;
+      font-weight: 400;
+    }
+    .link {
+      width: 6rem;
+      margin: 10px 10px;
+    }
+    .link > a {
+      font-size: 1.12rem;
+    }
+    .cont-btn {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      width: 1.5rem;
+    }
+    .btn {
+      font-size: 1rem;
+    }
+    /* logo y descripcion login */
+    .login {
+      font-size: 1rem;
+      text-align: center;
+      background-color: map-get($colores,sextario);
+      color: map-get($colores,primario);
+      text-align: center;
+    }
+    .icon {
+      font-size: 1rem;
+      padding: 5px;
+      margin: 0 30px;
+    }
+    /* seccion hero o portada */
+    .hero-title {
+      font-size: 1.25rem;
+
+    }
+    .hero-text {
+      font-size: 1.18rem;
+    }
+
+    /* seccion acerca de  */
+    .about-title {
+      font-size: 1.25rem;
+      margin-top: 25px;
+    }
+    .about-text {
+      font-size: 1.18rem;
+    }
+    /* productos */
+    .title-products-cont {
+      width: 80%;
+      margin-top: 10px;
+    }
+    .products-title {
+      font-size: 1.25rem;
+      margin-top: 15px;
+    }
+    /* categorias */
+    .categorias-container {
+      margin-top: 20px;
+      gap: 10px;
+    }
+    .categorias-container > a {
+      padding: 5px;
+      border-radius: 10px;
+    }
+    .categorias > h2 {
+      font-size: 1.2rem;
+    }
+    .title-cont {
+      font-size: 1.12rem;
+    }
+    /* sección soporte */
+    #Service {
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,132 @@
+/*  Productos */
+#Products {
+    width: map-get($porcentajes,fase10);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    font-family: "Nunito", sans-serif;
+
+    .title-products-cont {
+      width: map-get($porcentajes,fase9);
+      @extend%flex-center;
+      margin-top: 100px;
+      .products-title {
+        font-size: 2.25rem;
+        text-align: center;
+        color: map-get($colores,primario);
+        margin-top: 50px;
+        
+      }
+    }
+  }
+  .categorias {
+    width: 90%;
+    @extend%flex-center;
+    font-size: 2.25rem;
+    h2 {
+      font-size: 2.25rem;
+      background-color: map-get($colores,sextario);
+      color: map-get($colores,cuartenario);
+      text-align: center;
+      margin: 40px;
+      
+    }
+  }
+  .categorias-container{
+    width: map-get($porcentajes,fase9);
+    @extend%flex-center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 20px;
+    a {
+      font-size: 1.25rem; 
+      display: inline-block;
+      padding: 10px;
+      background-color:map-get($colores,terciario);
+      border-radius: 10px;
+      color: $color-tipografia;
+      cursor: pointer;
+      text-decoration:  $decoracion;
+      text-align: center;
+    }
+  }
+  #Mother,
+  #Micros,
+  #Cooler,
+  #Ram,
+  #Discos,
+  #Psu,
+  #Torres,
+  #Vga,
+  #Screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    .title-cont {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-size: 1.87rem;
+      font-weight: 800;
+      background-color: map-get($colores,sextario);
+      color: map-get($colores,quinario);
+    }
+    .products-container {
+      @extend%flex-center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+      .card {
+        @extend%flex-center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 80px;
+        gap: 10px;
+        max-width: 20rem;
+        background-color:map-get($colores,sextario);
+        .card-img {
+          max-width: 18.75rem;
+        }
+        .card-title {
+          background-color:map-get($colores,sextario);
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: $color-tipografia;
+          border: $borde;
+
+        }
+        .card-text {
+          background-color:map-get($colores,sextario);
+          text-align: center;
+          font-size: 1.37rem;
+          color: $color-tipografia;
+        }
+        span {
+          background-color:map-get($colores,sextario);
+          text-align: center;
+          font-size: 1.37rem;
+          font-weight: 800;
+          color: map-get($colores,primario);
+        }
+        .card-btn {
+          @extend%flex-center;
+          text-align: center;
+          font-size: 1.87rem;
+          background-color: map-get($colores,cuartenario);
+          color: $color-tipografia;
+          cursor: pointer;
+          border: 1px solid $color-tipografia;
+          border-radius: 8px;
+          box-shadow: 2px 2px 2px 1px rgba(235, 227, 227, 0.7);
+          margin: 15px 15px;
+          padding: 5px 5px;
+        }
+      }
+      
+    }
+  }
+
+

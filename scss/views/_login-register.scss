@@ -1,0 +1,107 @@
+                  /*login y registrase*/
+.body_login {
+  font-family: "Chakra Petch", sans-serif;
+  margin: 0;
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+  background-size: cover;
+  background-attachment: fixed;
+  }
+.header_login {         /*boton "volver"*/      
+  width: map-get($porcentajes,fase10);
+  @include flex(flex,space-between,center);
+  position: fixed;
+  margin-top: 1.12rem;
+  .logo_login {
+    width: 11.25rem;
+    height: 9.37rem;
+    }
+   nav{
+    background-color:map-get($colores,sextario);
+    .volver{
+      margin-top: 24px;
+      border: 2px solid map-get($colores,login-registro);
+      box-shadow: 0 10px 20px 0 map-get($colores,quinario);
+      text-decoration: $decoracion;
+      font-size: 1.37rem;
+      font-weight: bold;
+      color: map-get($colores,quinario);
+      }
+    } 
+  }
+  /*todo el formulario*/
+  .form {  
+    max-width: map-get($porcentajes,fase10);
+    position: relative;
+    top: 16.12rem;
+    @include flex(flex,center,center);
+    flex-direction: column;
+    gap: 20px;
+    .h1_principal {
+      @include flex(flex,space-between,top);
+      color: map-get($colores,login-registro);
+      font-size: 2.5rem;
+    }
+    .container_login {
+      max-width: 100%;
+      @include flex(block,space-between,center);
+      flex-wrap: wrap;
+      .input-cont {
+        margin-bottom: 15px;
+        border: 2px solid map-get($colores,quinario);
+        border-radius: 5px;
+        box-shadow: 0 5px 20px 0 map-get($colores,quinario);
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+          @include flex(flex,center,center);
+          background-color: transparent;
+          color: $color-tipografia;
+          font-size: 1.12rem;
+          text-align: center;
+          max-width: 100%;
+          padding: 5px;
+          border:$decoracion;
+          }
+      }
+      }
+    }
+input[type="submit"] {
+  background-color:map-get($colores,sextario);
+  color: map-get($colores,login-registro);
+  font-size: 1.12rem;
+  text-align: center;
+  border: none;
+  margin: 5px 180px;
+  padding: 20px;
+  border: 2px solid map-get($colores,quinario);
+  border-radius: 8px;
+  box-shadow: 0 5px 20px 0 map-get($colores,quinario);
+  }
+.span_login {
+  @include flex(flex,left,center);
+  margin-top: 20.5px;
+  padding: 5px;
+  font-size: 1.37rem;
+  font-weight: 600;
+  font-family: "Monomaniac One", sans-serif;
+  color:map-get($colores,login-registro);
+  box-shadow: 0 10px 20px 0 map-get($colores,login-registro);
+}
+.link_login {
+  margin-top: 24px;
+  border: 2px solid map-get($colores,login-registro);
+  box-shadow: 0 10px 20px 0 map-get($colores,quinario);
+  text-decoration: none;
+  font-size: 1.37rem;
+  font-weight: bold;
+  color: map-get($colores,quinario);
+  }
+.link_login:hover {
+    color: map-get($colores,primario);
+  }
+input[type="submit"]:hover {
+  background: $color-tipografia;
+  }
+
+
+

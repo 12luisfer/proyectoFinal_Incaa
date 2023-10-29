@@ -1,0 +1,66 @@
+                                /*HEADER*/
+/*header/navegador*/
+.header {
+    position: fixed;
+    width: map-get($porcentajes,fase10);
+    height: 9.37rem;
+    @include flex(flex,space-between,center);
+    background-color: map-get($colores,terciario);
+    .logo {
+      width: 11.25rem;
+      height: 9.37rem;
+    }
+    .navbar {  /*navegador de la tienda/ el contenedor */
+      width: 90%;
+      @include flex(flex,center,center);
+      font-family: "Nunito", sans-serif;
+      .navbar-list {
+        @include flex(flex,center,center);
+        margin: 5px;
+        gap: 15px;
+      .link a {  /*links de mi navegador color*/
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: map-get($colores,secundario);
+      text-align: center;
+      text-decoration: $decoracion;
+    }
+      }
+    }
+  }
+  .cont-btn{
+    background-color:map-get($colores,sextario);
+    .login { /*mi login estilo del link*/
+      font-size: 1.56rem;
+      color:map-get($colores,primario);
+      background-color: map-get($colores,sextario);
+      text-decoration: $decoracion;
+    }
+  }
+  .icon { /*mis iconos de carrito y login(la personita)*/
+    margin: 0 30px;
+    background-color:map-get($colores,sextario);
+    color: $color-iconos;
+    font-size: 1.56rem;
+    cursor: pointer;
+  }
+  /* efecto blur de mi menu hamburguesa, las secciones */
+  .overlay {
+    position: absolute;
+    top: 5.62rem;
+    left: 2;   /*iba 0 modifique a 2*/
+    height: 100vh;
+    width: 300vh;
+    z-index: 1;
+    background: map-get($colores,terciario);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: $decoracion;
+  }
+  /*mi menu de hamburguesa img*/
+  #menu-toggle:checked ~ .overlay {
+    display: block;
+  }
+  #cart-toggle:checked ~ .overlay {
+    display: block;
+  }

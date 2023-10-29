@@ -1,0 +1,63 @@
+/*  Servicio Técnico(soporte) */
+#Service {
+  @include flex-soporte(flex, center,center,column,wrap);
+    width: map-get($porcentajes,fase10);
+    margin-top: 40px;
+    gap: 30px;
+    margin-top: 0;
+    .service-title {
+      max-width: map-get($porcentajes,fase10);
+      text-align: center;
+      font-size: 2.25rem;
+      color: map-get($colores,primario);
+      margin-top: 150px;
+    }
+    .cont-services {
+      @include flex-soporte(flex,center,baseline,row,wrap);
+      width: map-get($porcentajes,fase10);
+      gap: 8px;
+      .cont-service {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction:row;
+
+        max-width: 20rem;
+        .service-text {
+          background-color:map-get($colores,sextario);
+          text-align: center;
+          font-size: 1.37rem;
+          color:$color-tipografia;
+          margin-top: 30px;
+        }
+        .service-btn {
+          @extend%flex-center;
+          font-size: 1.37rem;
+          background-color: map-get($colores,sextario) ;
+          color: $color-tipografia;
+          cursor: pointer;
+          border:  $borde;
+          border-radius: 8px;
+          box-shadow: 2px 2px 2px 1px $color-tipografia;
+          margin: 15px 15px;
+          padding: 5px 5px;
+
+        }
+        .icon-service {       /*icono de los servicios*/
+          @extend%flex-center;
+          font-size: 6.25rem;
+          text-align: center;
+          margin-bottom: 20px;
+          width: 12.5rem;
+          color:$color-iconos;
+        }
+      
+      }
+    
+    }
+
+  }
+
+
+
