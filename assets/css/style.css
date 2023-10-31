@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/*color tipografia contenidos*/
+/*color de mis iconos/todos*/
+/*bordes decontenido*/
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
 #Service .cont-services .cont-service .icon-service, #Service .cont-services .cont-service .service-btn, #Mother .products-container .card .card-btn,
 #Micros .products-container .card .card-btn,
@@ -51,11 +54,25 @@
 }
 
 body {
-  background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
-  background-size: cover;
+  width: 100%;
+  background: linear-gradient(45deg, rgb(174, 174, 225), rgb(0, 38, 255), rgb(178, 53, 216), rgb(182, 63, 238));
+  background-size: 400% 400%;
   font-family: "Chakra Petch", sans-serif;
+  position: relative;
+  animation: cambiar 5s ease-in-out infinite;
 }
 
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 /*HEADER*/
 /*header/navegador*/
 .header {
@@ -65,7 +82,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7333333333);
+  background-color: black;
+  z-index: 50;
 }
 .header .logo {
   width: 11.25rem;
@@ -584,7 +602,7 @@ body {
 }
 
 .card-img:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: transform 2s ease-in-out;
   z-index: 2;
   cursor: pointer;
