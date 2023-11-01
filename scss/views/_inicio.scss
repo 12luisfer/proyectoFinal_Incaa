@@ -12,12 +12,25 @@
         font-weight: 700;
         color:map-get($colores,primario);
         margin-top: 180px;
+        font-family: $font-titulo;
+        
+
     }
     .hero-text {
         text-align: center;
         font-size: 1.87rem;
         color: $color-tipografia;
         margin-top: 20px;
+        font-family: $font-texto;
+    }
+}
+
+.img_bienvenida{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 500px;
     }
 }
 

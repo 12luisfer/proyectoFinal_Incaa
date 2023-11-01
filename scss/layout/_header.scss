@@ -13,14 +13,13 @@
     .navbar {  /*navegador de la tienda/ el contenedor */
       width: 90%;
       @include flex(flex,center,center);
-      font-family: "Nunito", sans-serif;
+      font-family: 'Nosifer', sans-serif;
       .navbar-list {
         @include flex(flex,center,center);
         margin: 5px;
         gap: 15px;
       .link a {  /*links de mi navegador color*/
-      font-size: 1.5rem;
-      font-weight: bold;
+      font-size: 1.2rem;
       color: map-get($colores,secundario);
       text-align: center;
       text-decoration: $decoracion;

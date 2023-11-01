@@ -10,7 +10,8 @@
       text-align: center;
       font-size: 2.25rem;
       color: map-get($colores,primario);
-      margin-top: 150px;
+      margin-top: 200px;
+      font-family:$font-titulo;
     }
     .cont-services {
       @include flex-soporte(flex,center,baseline,row,wrap);
@@ -30,6 +31,7 @@
           font-size: 1.37rem;
           color:$color-tipografia;
           margin-top: 30px;
+          font-family:$font-texto;
         }
         .service-btn {
           @extend%flex-center;
@@ -42,7 +44,7 @@
           box-shadow: 2px 2px 2px 1px $color-tipografia;
           margin: 15px 15px;
           padding: 5px 5px;
-
+          font-family: $font-texto;
         }
         .icon-service {       /*icono de los servicios*/
           @extend%flex-center;
@@ -51,12 +53,9 @@
           margin-bottom: 20px;
           width: 12.5rem;
           color:$color-iconos;
-        }
-      
-      }
-    
+        }     
+      }   
     }
-
   }
 
 

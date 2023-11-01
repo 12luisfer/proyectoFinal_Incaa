@@ -7,12 +7,14 @@
     color: $color-tipografia;
     gap: 30px;
     margin-top: 0px;
+    font-family:$font-texto;
     h1 {
       text-align: center;
       font-size: 2.25rem;
       font-weight: 900;
-      margin-top: 150px;
+      margin-top: 200px;
       color:map-get($colores,primario);
+      font-family: $font-titulo;
     }
     .info-container {
       @extend%flex-direccion;
@@ -23,6 +25,7 @@
         .info-column{
           background-color: map-get($colores,terciario-bold);
           border:$borde;
+          padding: 40px;
           h3 {
             @include flex(flex,center,center);
             font-size: 1.5rem;
@@ -54,10 +57,9 @@
       border: $borde;
       iframe {
         width: map-get($porcentajes,fase10);
-        height: 200px;
-        border-radius: 10px;
+        height: 600px;
         }
     }
-  
+
   }
 

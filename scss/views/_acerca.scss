@@ -8,7 +8,8 @@
       font-size: 2.5rem;
       text-align: center;
       color: map-get($colores,primario);
-      margin-top: 150px;
+      margin-top: 210px;
+      font-family: $font-titulo;
       
     }
     .about-text {
@@ -16,7 +17,7 @@
       font-size: 1.5rem;
       margin-top: 30px;
       color: $color-tipografia;
-      
+      font-family: $font-texto;      
     }
   }
 

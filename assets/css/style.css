@@ -2,7 +2,10 @@
 /*color tipografia contenidos*/
 /*color de mis iconos/todos*/
 /*bordes decontenido*/
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap");
+/*anulo decoraciones*/
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
 #Service .cont-services .cont-service .icon-service, #Service .cont-services .cont-service .service-btn, #Mother .products-container .card .card-btn,
 #Micros .products-container .card .card-btn,
 #Cooler .products-container .card .card-btn,
@@ -45,7 +48,9 @@
   flex-wrap: wrap;
 }
 
-/* Reset de estilos */
+/*tipografia navegador*/
+/*titulos*/
+/*texto*/
 * {
   margin: 0;
   padding: 0;
@@ -55,24 +60,42 @@
 
 body {
   width: 100%;
-  background: linear-gradient(45deg, rgb(174, 174, 225), rgb(0, 38, 255), rgb(178, 53, 216), rgb(182, 63, 238));
+  background: linear-gradient(45deg, rgb(77, 17, 101), rgb(85, 9, 128), rgb(24, 23, 25), rgb(25, 22, 26));
   background-size: 400% 400%;
-  font-family: "Chakra Petch", sans-serif;
   position: relative;
   animation: cambiar 5s ease-in-out infinite;
 }
 
-@keyframes cambiar {
-  0% {
-    background-position: 0 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff;
 }
+
+body::-webkit-scrollbar-thumb {
+  background: brown;
+  border-radius: 25px;
+  border: 2px solid rgb(222, 11, 11);
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.whatsapp-button a {
+  display: block;
+  color: #FFFfFF; /* Color de texto */
+  width: 60px; /* Ancho del botón */
+  height: 60px; /* Altura del botón */
+  border-radius: 50%; /* Para hacer un círculo */
+  text-align: center;
+  line-height: 60px;
+  text-decoration: none;
+}
+.whatsapp-button a img {
+  width: 50px; /* Tamaño del icono de WhatsApp */
+}
+
 /*HEADER*/
 /*header/navegador*/
 .header {
@@ -94,7 +117,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nosifer", sans-serif;
 }
 .header .navbar .navbar-list {
   display: flex;
@@ -104,8 +127,7 @@ body {
   gap: 15px;
 }
 .header .navbar .navbar-list .link a { /*links de mi navegador color*/
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.2rem;
   color: #f30f9c;
   text-align: center;
   text-decoration: none;
@@ -167,12 +189,23 @@ body {
   font-weight: 700;
   color: #7fff00;
   margin-top: 180px;
+  font-family: "Bowlby One SC", sans-serif;
 }
 #Hero .hero-text {
   text-align: center;
   font-size: 1.87rem;
   color: #fff;
   margin-top: 20px;
+  font-family: "Rakkas", serif;
+}
+
+.img_bienvenida {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_bienvenida img {
+  width: 500px;
 }
 
 /* Acerca de nosotros  */
@@ -188,13 +221,15 @@ body {
   font-size: 2.5rem;
   text-align: center;
   color: #7fff00;
-  margin-top: 150px;
+  margin-top: 210px;
+  font-family: "Bowlby One SC", sans-serif;
 }
 #About .about-text {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 30px;
   color: #fff;
+  font-family: "Rakkas", serif;
 }
 
 /*  Productos */
@@ -204,17 +239,17 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 0px;
-  font-family: "Nunito", sans-serif;
 }
 #Products .title-products-cont {
   width: 90%;
-  margin-top: 100px;
+  margin-top: 160px;
 }
 #Products .title-products-cont .products-title {
   font-size: 2.25rem;
   text-align: center;
   color: #7fff00;
   margin-top: 50px;
+  font-family: "Bowlby One SC", sans-serif;
 }
 
 .categorias {
@@ -223,8 +258,9 @@ body {
 }
 .categorias h2 {
   font-size: 2.25rem;
+  font-family: "Bowlby One SC", sans-serif;
   background-color: transparent;
-  color: #ff4500;
+  color: #7fff00;
   text-align: center;
   margin: 40px;
 }
@@ -234,6 +270,7 @@ body {
   flex-wrap: wrap;
   margin-top: 40px;
   gap: 20px;
+  font-family: "Bowlby One SC", sans-serif;
 }
 .categorias-container a {
   font-size: 1.25rem;
@@ -245,6 +282,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+  box-shadow: 0px 0px 17px 7px rgba(140, 112, 255, 0.82);
 }
 
 #Mother,
@@ -259,7 +297,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px;
+  font-family: "Rakkas", serif;
 }
 #Mother .title-cont,
 #Micros .title-cont,
@@ -278,6 +316,7 @@ body {
   font-weight: 800;
   background-color: transparent;
   color: rgba(0, 213, 255, 0.8941176471);
+  margin-top: 170px;
 }
 #Mother .products-container,
 #Micros .products-container,
@@ -401,7 +440,8 @@ body {
   text-align: center;
   font-size: 2.25rem;
   color: #7fff00;
-  margin-top: 150px;
+  margin-top: 200px;
+  font-family: "Bowlby One SC", sans-serif;
 }
 #Service .cont-services {
   display: flex;
@@ -426,6 +466,7 @@ body {
   font-size: 1.37rem;
   color: #fff;
   margin-top: 30px;
+  font-family: "Rakkas", serif;
 }
 #Service .cont-services .cont-service .service-btn {
   font-size: 1.37rem;
@@ -437,6 +478,7 @@ body {
   box-shadow: 2px 2px 2px 1px #fff;
   margin: 15px 15px;
   padding: 5px 5px;
+  font-family: "Rakkas", serif;
 }
 #Service .cont-services .cont-service .icon-service { /*icono de los servicios*/
   font-size: 6.25rem;
@@ -458,13 +500,15 @@ body {
   color: #fff;
   gap: 30px;
   margin-top: 0px;
+  font-family: "Rakkas", serif;
 }
 #Contact h1 {
   text-align: center;
   font-size: 2.25rem;
   font-weight: 900;
-  margin-top: 150px;
+  margin-top: 200px;
   color: #7fff00;
+  font-family: "Bowlby One SC", sans-serif;
 }
 #Contact .info-container {
   gap: 30px;
@@ -475,6 +519,7 @@ body {
 #Contact .info-container .contact-info-container .info-column {
   background-color: black;
   border: 5px red solid;
+  padding: 40px;
 }
 #Contact .info-container .contact-info-container .info-column h3 {
   display: flex;
@@ -507,8 +552,7 @@ body {
 }
 #Contact .mapa iframe {
   width: 100%;
-  height: 200px;
-  border-radius: 10px;
+  height: 600px;
 }
 
 /*footer*/
@@ -608,6 +652,18 @@ body {
   cursor: pointer;
 }
 
+/*animacion fondo*/
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 /* Responsive Design*/
 /* 1200px */
 @media (max-width: 1200px) {

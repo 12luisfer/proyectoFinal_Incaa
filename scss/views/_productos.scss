@@ -5,17 +5,16 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 0px;
-    font-family: "Nunito", sans-serif;
-
     .title-products-cont {
       width: map-get($porcentajes,fase9);
       @extend%flex-center;
-      margin-top: 100px;
+      margin-top: 160px;
       .products-title {
         font-size: 2.25rem;
         text-align: center;
         color: map-get($colores,primario);
         margin-top: 50px;
+        font-family: $font-titulo;
         
       }
     }
@@ -26,8 +25,9 @@
     font-size: 2.25rem;
     h2 {
       font-size: 2.25rem;
+      font-family: 'Bowlby One SC', sans-serif;  
       background-color: map-get($colores,sextario);
-      color: map-get($colores,cuartenario);
+      color: map-get($colores,primario);
       text-align: center;
       margin: 40px;
       
@@ -39,6 +39,7 @@
     flex-wrap: wrap;
     margin-top: 40px;
     gap: 20px;
+    font-family: $font-titulo;
     a {
       font-size: 1.25rem; 
       display: inline-block;
@@ -49,6 +50,8 @@
       cursor: pointer;
       text-decoration:  $decoracion;
       text-align: center;
+      box-shadow: 0px 0px 17px 7px rgba(140,112,255,0.82);
+      
     }
   }
   #Mother,
@@ -63,7 +66,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    font-family:$font-texto;
     .title-cont {
       width: 100%;
       display: flex;
@@ -73,6 +76,7 @@
       font-weight: 800;
       background-color: map-get($colores,sextario);
       color: map-get($colores,quinario);
+      margin-top: 170px
     }
     .products-container {
       @extend%flex-center;
