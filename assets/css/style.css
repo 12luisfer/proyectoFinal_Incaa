@@ -60,7 +60,7 @@
 
 body {
   width: 100%;
-  background: linear-gradient(45deg, rgb(40, 38, 42), rgb(40, 39, 40), rgb(24, 23, 25), rgb(25, 22, 26));
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(31, 30, 30), rgb(43, 42, 43), rgb(26, 26, 27));
   background-size: 400% 400%;
   position: relative;
   animation: cambiar 5s ease-in-out infinite;
@@ -298,6 +298,9 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   text-align: center;
   box-shadow: 0px 0px 37px 8px #71c71b;
+}
+.categorias-container a:hover {
+  color: rgb(255, 251, 0);
 }
 
 #Mother,
@@ -794,7 +797,6 @@ body::-webkit-scrollbar-thumb {
   .navbar-list {
     width: 50%;
     height: calc(80vh - 150px);
-    padding: 0 65px;
     background-color: transparent;
     position: absolute;
     top: 150px;
@@ -804,6 +806,7 @@ body::-webkit-scrollbar-thumb {
     left: 0;
     top: 11.25rem;
     border-radius: 8px;
+    padding: 20px;
   }
   #menu-toggle:checked + .navbar-list {
     opacity: 1;

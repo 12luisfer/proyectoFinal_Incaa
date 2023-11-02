@@ -14,8 +14,7 @@
         text-align: center;
         color: map-get($colores,primario);
         margin-top: 50px;
-        font-family: $font-titulo;
-        
+        font-family: $font-titulo;        
       }
     }
   }
@@ -29,8 +28,7 @@
       background-color: map-get($colores,sextario);
       color: map-get($colores,primario);
       text-align: center;
-      margin: 40px;
-      
+      margin: 40px;      
     }
   }
   .categorias-container{
@@ -50,7 +48,10 @@
       cursor: pointer;
       text-decoration:  $decoracion;
       text-align: center;
-      box-shadow: 0px 0px 37px 8px #71c71b;      
+      box-shadow: 0px 0px 37px 8px #71c71b;
+      &:hover {
+        color: $color-iconos;
+      }  
     }
   }
   #Mother,
@@ -76,7 +77,7 @@
       background-color: map-get($colores,sextario);
       color:$color-iconos;
       margin-top: 170px;
-      text-transform: uppercase
+      text-transform: uppercase;    
     }
     .products-container {
       @extend%flex-center;
@@ -128,8 +129,7 @@
           margin: 15px 15px;
           padding:0px 20px;
         }
-      }
-      
+      }      
     }
   }
 
