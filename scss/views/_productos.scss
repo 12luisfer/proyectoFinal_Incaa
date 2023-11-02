@@ -50,8 +50,7 @@
       cursor: pointer;
       text-decoration:  $decoracion;
       text-align: center;
-      box-shadow: 0px 0px 17px 7px rgba(140,112,255,0.82);
-      
+      box-shadow: 0px 0px 37px 8px #71c71b;      
     }
   }
   #Mother,
@@ -75,8 +74,9 @@
       font-size: 1.87rem;
       font-weight: 800;
       background-color: map-get($colores,sextario);
-      color: map-get($colores,quinario);
-      margin-top: 170px
+      color:$color-iconos;
+      margin-top: 170px;
+      text-transform: uppercase
     }
     .products-container {
       @extend%flex-center;
@@ -99,7 +99,8 @@
           font-size: 1.5rem;
           font-weight: 800;
           color: $color-tipografia;
-          border: $borde;
+          border: 3px solid map-get($colores,primario);
+          padding: 10px ;
 
         }
         .card-text {
@@ -119,14 +120,14 @@
           @extend%flex-center;
           text-align: center;
           font-size: 1.87rem;
-          background-color: map-get($colores,cuartenario);
-          color: $color-tipografia;
+          background-color:$color-iconos;
+          color: map-get($colores,terciario-bold);
           cursor: pointer;
           border: 1px solid $color-tipografia;
           border-radius: 8px;
           box-shadow: 2px 2px 2px 1px rgba(235, 227, 227, 0.7);
           margin: 15px 15px;
-          padding: 5px 5px;
+          padding:0px 20px;
         }
       }
       

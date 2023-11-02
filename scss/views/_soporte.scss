@@ -23,7 +23,6 @@
         justify-content: center;
         align-items: center;
         flex-direction:row;
-
         max-width: 20rem;
         .service-text {
           background-color:map-get($colores,sextario);
@@ -56,7 +55,18 @@
         }     
       }   
     }
+
   }
+  .iframe_soporte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    iframe{
+        width: 500px;
+        border:$borde;
+    }
+}
+
 
 
 

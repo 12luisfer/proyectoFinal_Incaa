@@ -19,24 +19,19 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
     <!------ icono ----->
     <link rel="icon" href="../assets/logo/milo-logo.webp">
-    <!----- Tipografía ----->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <!--header-->
     <header class="header">
         <a href="../index.html"><img src="../assets/logo/milo-logo.webp" alt="logo-tienda" class="logo" /></a>
-
         <nav class="navbar">
-            <!--- label e input con el icono del menú hamburguesa --->
+            <!---icono del menú hamburguesa --->
             <label for="menu-toggle" class="menu-label">
                 <i class="fa-solid fa-bars-staggered icon"></i>
             </label>
             <input type="checkbox" id="menu-toggle" />
-            <!--Acá arranca el menú-->
+            <!--arranca el menú-->
             <ul class="navbar-list">
                 <li class="link"><a href="../index.html">Inicio</a></li>
                 <li class="link"><a href="acerca.html">Acerca</a></li>
@@ -44,23 +39,20 @@
                 <li class="link"><a href="contacto.html">Contacto</a></li>
                 <li class="link"><a href="soporte.html">Soporte</a></li>
             </ul>
-            <!--- contenedor enlaces para dirigirse a las páginas de login y register --->
+            <!---las páginas de login y register --->
             <div class="cont-btn">
                 <a class="login" href="../pages/login.html" class="btn"><i class="fa-solid fa-user icon"></i>Login</a>
             </div>
-
-            <!--- label e input con el icono del menu para el carrito --->
-
+            <!---icono del menu para el carrito --->
             <label for="cart-toggle" class="cart-label">
                 <i class="fa-solid fa-cart-shopping icon"></i>
             </label>
             <input type="checkbox" id="cart-toggle" />
-
-            <!--- agrego el carrito de compras-->
+            <!---carrito de compras-->
             <div class="cart">
                 <h2>Tus Productos</h2>
                 <div class="cart-item">
-                    <img class="card-img" src="../assets/cards/mother/asusprime-z690.webp" alt="item del carrito" />
+                    <img class="card-img" src="../assets/cards/mother/asusprime_z690.webp" alt="item del carrito" />
                     <div class="item-info">
                         <h3 class="item-title">Mother Asus Prime Z690</h3>
                         <p class="item-bid">Oferta Actual</p>
@@ -73,19 +65,15 @@
                     <span class="quantity-handler up">+</span>
                 </div>
                 <span class="divider"></span>
-
                 <div class="cart-total">
                     <p>Total:</p>
                     <span>$271.560</span>
                 </div>
                 <button class="btn-add">Comprar</button>
             </div>
-
-            <!--Agrego un div vacío con la clase overlay para hacer el efecto blur-->
             <div class="overlay"></div>
         </nav>
     </header>
-
     <main>
         <!---Sección Servicio Tecnico-->
         <section id="Service">
@@ -93,28 +81,21 @@
             <div class="cont-services">
                 <div class="cont-service">
                     <i class="fa-solid fa-screwdriver-wrench icon-service"></i>
-                    <p class="service-text">
-                        Instalación de software para Mac y Windows
-                    </p>
+                    <p class="service-text">Instalación de software para Mac y Windows</p>
                     <button class="service-btn">SOLICITAR PRESUPUESTO</button>
                 </div>
-
                 <!--- Back Up --->
                 <div class="cont-service">
                     <i class="fa-solid fa-cloud-arrow-up icon-service"></i>
                     <p class="service-text">Servicio de Back Up</p>
-
                     <button class="service-btn">SOLICITAR PRESUPUESTO</button>
                 </div>
-
                 <!--- Mantenimiento --->
                 <div class="cont-service">
                     <i class="fa-solid fa-microchip icon-service"></i>
                     <p class="service-text">Mantenimiento y reparación de hardware</p>
-
                     <button class="service-btn">SOLICITAR PRESUPUESTO</button>
                 </div>
-
                 <!--- Actualización de Hardware --->
                 <div class="cont-service">
                     <i class="fa-brands fa-space-awesome icon-service"></i>
@@ -122,14 +103,22 @@
                     <button class="service-btn">SOLICITAR PRESUPUESTO</button>
                 </div>
             </div>
+            <h2 class="service-title">Videos esenciale para tu pc</h2>
+            <div class="iframe_soporte">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CInu-RX7RKQ?si=BFgazbv_yoLipn-Z"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="iframe_soporte">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SylgYrhneLQ?si=GMMkecGXf70ACug0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </section>
         <div class="whatsapp-button">
             <a href="https://wa.me/TUNUMERODETELEFONO" target="_blank">
                 <img src="../assets/icon/whatsapp_3670051.webp" alt="WhatsApp Icon"></a>
         </div>
     </main>
-
-
     <!--- Footer-->
     <footer class="footer">
         <div class="container-fluid">
@@ -150,7 +139,6 @@
                         <a class="text-secondary text-decoration-none" href="#">Feriados: cerrado</a>
                     </div>
                 </div>
-
                 <div class="col-xs-12  col-md-6 col-lg-3">
                     <p class="h5 mb-3">informacion</p>
                     <div class="mb-2">
@@ -160,17 +148,14 @@
                         <a class="text-secondary text-decoration-none" href="#">privacity-politica</a>
                     </div>
                 </div>
-
                 <div class="col-xs-12  col-md-6 col-lg-3">
                     <p class="h5 mb-3">te ayudamos</p>
                     <div class="mb-2">
                         <a class="text-secondary text-decoration-none" href="#">escribinos para poder ayudarte</a>
                     </div>
-
                 </div>
                 <div class="col-xs-12 pt-8">
                     <p class="text-white text-center">copyright - All rights reserved © 2022 Milo</p>
-
                 </div>
             </div>
         </div>

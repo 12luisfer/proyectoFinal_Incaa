@@ -23,6 +23,9 @@
       color: map-get($colores,secundario);
       text-align: center;
       text-decoration: $decoracion;
+      &:hover {
+        color: $color-iconos;
+      }
     }
       }
     }
@@ -32,7 +35,7 @@
     background-color:map-get($colores,sextario);
     .login { /*mi login estilo del link*/
       font-size: 1.56rem;
-      color:map-get($colores,primario);
+      color:$color-iconos;
       background-color: map-get($colores,sextario);
       text-decoration: $decoracion;
     }
@@ -64,3 +67,4 @@
   #cart-toggle:checked ~ .overlay {
     display: block;
   }
+

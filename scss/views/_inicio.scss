@@ -8,7 +8,7 @@
     align-items: center;
     .hero-title {
         text-align: center;
-        font-size: 3.12rem;
+        font-size: 2.5rem;
         font-weight: 700;
         color:map-get($colores,primario);
         margin-top: 180px;
@@ -23,17 +23,14 @@
         margin-top: 20px;
         font-family: $font-texto;
     }
-}
-
-.img_bienvenida{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img{
-        width: 500px;
+    .img_bienvenida{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+        img{
+            width: 700px;
+        }
     }
 }
-
-
-
 

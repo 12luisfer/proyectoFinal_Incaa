@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,24 +18,18 @@
     <link rel="icon" href="../assets/logo/milo-logo.webp">
     <!------ CSS ----->
     <link rel="stylesheet" href="../assets/css/style.css" />
-
-    <!----- Tipografía ----->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
     <!--header-->
     <header class="header">
         <a href="../index.html"><img src="../assets/logo/milo-logo.webp" alt="logo-tienda" class="logo" /></a>
         <nav class="navbar">
-            <!--- label e input con el icono del menú hamburguesa --->
+            <!--icono del menú hamburguesa -->
             <label for="menu-toggle" class="menu-label">
                 <i class="fa-solid fa-bars-staggered icon"></i>
             </label>
             <input type="checkbox" id="menu-toggle" />
-            <!--Acá arranca el menú-->
+            <!--arranca el menú-->
             <ul class="navbar-list">
                 <li class="link"><a href="../index.html">Inicio</a></li>
                 <li class="link"><a href="./acerca.html">Acerca</a></li>
@@ -44,26 +37,20 @@
                 <li class="link"><a href="./contacto.html">Contacto</a></li>
                 <li class="link"><a href="./soporte.html">Soporte</a></li>
             </ul>
-            <!--- contenedor enlaces para dirigirse a las páginas de login y register --->
+            <!--páginas de login y register -->
             <div class="cont-btn">
                 <a class="login" href="../pages/login.html" class="btn"><i class="fa-solid fa-user icon"></i>Login</a>
             </div>
-
-            <!--- label e input con el icono del menu para el carrito --->
-
+            <!--icono del menu para el carrito --->
             <label for="cart-toggle" class="cart-label">
                 <i class="fa-solid fa-cart-shopping icon"></i>
             </label>
             <input type="checkbox" id="cart-toggle" />
-
-
-
-
-            <!--- agrego el carrito de compras-->
+            <!--carrito de compras-->
             <div class="cart">
                 <h2>Tus Productos</h2>
                 <div class="cart-item">
-                    <img class="card-img" src="../assets/cards/mother/asusprime-z690.webp" alt="item del carrito" />
+                    <img class="card-img" src="../assets/cards/mother/asusprime_z690.webp" alt="item del carrito" />
                     <div class="item-info">
                         <h3 class="item-title">Mother Asus Prime Z690</h3>
                         <p class="item-bid">Oferta Actual</p>
@@ -75,29 +62,16 @@
                     <span class="item-quantity">1</span>
                     <span class="quantity-handler up">+</span>
                 </div>
-
-
-
-
                 <span class="divider"></span>
-
                 <div class="cart-total">
                     <p>Total:</p>
                     <span>$271.560</span>
                 </div>
                 <button class="btn-add">Comprar</button>
             </div>
-
-            <!--Agrego un div vacío con la clase overlay para hacer el efecto blur-->
             <div class="overlay"></div>
         </nav>
     </header>
-
-
-
-
-
-
     <main>
         <!---Sección Acerca de --->
         <section id="About">
@@ -111,14 +85,28 @@
                 de
                 la industria.
             </p>
-            <h2 class="about-title">Nuestra Historia
+            <div class="nosotros_img">
+                <img src="../assets/imagenes/local.webp" alt="Imagen de bienvenida" />
+                <img src="../assets/imagenes/tienda.webp" alt="Imagen de bienvenida" />
+            </div>
 
+            <h2 class="about-title">Nuestra Historia
             </h2>
             <p class="about-text">
                 Fundada en 2005, nuestra tienda nació de la visión de proporcionar a nuestros clientes
                 acceso a las últimas y mejores tecnologías informáticas a precios competitivos. Con el tiempo, hemos
                 crecido y nos hemos convertido en un destino confiable para entusiastas de la informática y
                 profesionales de todo el mundo.
+                Nuestra historia comienza con un pequeño local, donde compartíamos nuestra pasión por la tecnología con
+                amigos y vecinos. Rápidamente nos dimos cuenta de que había una creciente demanda de productos y
+                servicios de alta calidad en el campo de la computación. Decidimos emprender un viaje, dedicando nuestro
+                tiempo y esfuerzo a construir un espacio donde las personas pudieran encontrar las soluciones
+                tecnológicas adecuadas para sus necesidades.
+                A lo largo de los años, hemos crecido y evolucionado. Desde nuestros modestos comienzos, hemos ampliado
+                nuestra gama de productos para ofrecer una selección diversa de computadoras, portátiles, componentes y
+                accesorios. Nos enorgullece decir que colaboramos con algunos de los principales fabricantes de
+                tecnología para llevar a nuestros clientes las últimas innovaciones y las marcas más confiables.
+                Nuestro compromiso con la satisfacción del cliente es inquebrantable. Sabemos que elegir la computadora adecuada puede ser una tarea abrumadora, y es por eso que nuestro equipo de expertos está aquí para ayudarte en cada paso del camino. Ya sea que seas un estudiante, un profesional creativo, un jugador apasionado o un empresario, estamos dedicados a encontrar la solución tecnológica perfecta para ti.
             </p>
         </section>
         <div class="whatsapp-button">
@@ -126,9 +114,6 @@
                 <img src="../assets/icon/whatsapp_3670051.webp" alt="WhatsApp Icon"></a>
         </div>
     </main>
-
-
-
     <!--- Footer-->
     <footer class="footer">
         <div class="container-fluid">
@@ -149,7 +134,6 @@
                         <a class="text-secondary text-decoration-none" href="#">Feriados: cerrado</a>
                     </div>
                 </div>
-
                 <div class="col-xs-12  col-md-6 col-lg-3">
                     <p class="h5 mb-3">informacion</p>
                     <div class="mb-2">
@@ -159,17 +143,14 @@
                         <a class="text-secondary text-decoration-none" href="#">privacity-politica</a>
                     </div>
                 </div>
-
                 <div class="col-xs-12  col-md-6 col-lg-3">
                     <p class="h5 mb-3">Te ayudamos</p>
                     <div class="mb-2">
                         <a class="text-secondary text-decoration-none" href="#">escribinos para ayudarte</a>
                     </div>
-
                 </div>
                 <div class="col-xs-12 pt-8">
                     <p class="text-white text-center">copyright - All rights reserved © 2022 Milo</p>
-
                 </div>
             </div>
         </div>

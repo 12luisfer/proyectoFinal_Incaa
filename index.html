@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,12 +18,7 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!------ icono ----->
   <link rel="icon" href="./assets/logo/milo-logo.webp">
-  <!----- Tipografía ----->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
   <!--header-->
   <header class="header">
@@ -35,29 +29,28 @@
         <i class="fa-solid fa-bars-staggered icon"></i>
       </label>
       <input type="checkbox" id="menu-toggle" />
-      <!--Acá arranca el menú-->
+      <!--el menú-->
       <ul class="navbar-list">
         <li class="link"><a href="./index.html">Inicio</a></li>
         <li class="link"><a href="./pages/acerca.html">Acerca </a></li>
         <li class="link"><a href="./pages/productos.html">Productos</a></li>
         <li class="link"><a href="./pages/contacto.html">Contacto</a></li>
         <li class="link"><a href="./pages/soporte.html">Soporte</a></li>
-
       </ul>
-      <!--- contenedor enlaces para dirigirse a las páginas de login y register --->
+      <!--- contenedor páginas de login y register --->
       <div class="cont-btn">
         <a class="login" href="./pages/login.html" class="btn"><i class="fa-solid fa-user icon"></i>Login</a>
       </div>
-      <!--- label e input con el icono del menu para el carrito --->
+      <!---icono del menu para el carrito --->
       <label for="cart-toggle" class="cart-label">
         <i class="fa-solid fa-cart-shopping icon"></i>
       </label>
       <input type="checkbox" id="cart-toggle" />
-      <!--- agrego el carrito de compras-->
+      <!---agrego el carrito de compras-->
       <div class="cart">
         <h2>Tus Productos</h2>
         <div class="cart-item">
-          <img class="card-img" src="./assets/cards/mother/asusprime-z690.webp" alt="item del carrito" />
+          <img class="card-img" src="./assets/cards/mother/asusprime_z690.webp" alt="item del carrito" />
           <div class="item-info">
             <h3 class="item-title">Mother Asus Prime Z690</h3>
             <p class="item-bid">Oferta Actual</p>
@@ -76,7 +69,6 @@
         </div>
         <button class="btn-add">Comprar</button>
       </div>
-      <!--Agrego un div vacío con la clase overlay para hacer el efecto blur-->
       <div class="overlay"></div>
     </nav>
   </header>
@@ -86,8 +78,11 @@
     <section id="Hero">
       <h1 class="hero-title">Bienvenidos a Milo Byte Computación</h1>
       <p class="hero-text">
-        Ofrecemos los mejores porductos y servicios técnicos
+        Donde encontraras las mejores marcas y ofertas del mercado
       </p>
+      <div class="img_bienvenida">
+        <img src="./assets/imagenes/img_bienvenida.webp" alt="Imagen de bienvenida" />
+      </div>
     </section>
     <div class="whatsapp-button">
       <a href="https://wa.me/TUNUMERODETELEFONO" target="_blank">
@@ -95,7 +90,6 @@
       </a>
     </div>
   </main>
- 
   <!--- Footer-->
   <footer class="footer">
     <div class="container-fluid">
@@ -116,7 +110,6 @@
             <a class="text-secondary text-decoration-none" href="#">Feriados: cerrado</a>
           </div>
         </div>
-
         <div class="col-xs-12  col-md-6 col-lg-3">
           <p class="h5 mb-3">informacion</p>
           <div class="mb-2">
@@ -126,7 +119,6 @@
             <a class="text-secondary text-decoration-none" href="#">privacity-politica</a>
           </div>
         </div>
-
         <div class="col-xs-12  col-md-6 col-lg-3">
           <p class="h5 mb-3">Te ayudamos</p>
           <div class="mb-2">
@@ -135,14 +127,12 @@
         </div>
         <div class="col-xs-12 pt-8">
           <p class="text-white text-center">copyright - All rights reserved © 2022 Milo</p>
-
         </div>
       </div>
     </div>
   </footer>
   <!--- Fontawesome ---->
   <script src="https://kit.fontawesome.com/89281333f4.js" crossorigin="anonymous"></script>
-
+  <script src="./assets/scrip.js"></script>
 </body>
-
 </html>

@@ -18,7 +18,7 @@
   .icon {  /*acomodo mi logo de login*/
     margin: 0 3px;
     background-color:map-get($colores,sextario);
-    color: map-get($colores,primario);
+    color:$color-iconos;
     font-size: 1.56rem;
     cursor: pointer;
   }
@@ -80,8 +80,12 @@
       background-color: map-get($colores,sextario);
       color: $color-tipografia;
     }
+    .nosotros_img img {
+      width: 80%;
+      height: 250px; 
+      margin: 15px; 
+    }
   }
-  
   /* 992px */
   @media (max-width: 992px) {
     .menu-label i {
@@ -99,7 +103,7 @@
       z-index: 7;
       left: 0;
       top: 11.25rem;
-      border-radius: 8px;
+      border-radius:8px;
     }
     #menu-toggle:checked + .navbar-list {
       opacity: 1;
@@ -120,7 +124,6 @@
     }
     /* animacion translate para cuando se utilice el check del cart-toggle */
     /* creo la animación */
-  
     @keyframes Translate-Cart {
       0% {
         transform: translateX(0);
@@ -135,6 +138,7 @@
     }
     .card-img {
       width: 10rem;
+      
     }
     .cart-item img {
       width: 7rem;
@@ -154,6 +158,15 @@
     .mapa iframe {
       height: 350px;
     }
+    /*img_nosotros*/
+    .nosotros_img {
+      flex-direction: row;
+    }
+    .nosotros_img img {
+      width: 50%;
+      height: 250px;
+      margin: 10px; 
+    }
   }
   /* 827px */
   @media (max-width: 827px) {
@@ -170,9 +183,33 @@
       flex-wrap: wrap;
       flex-direction: column;
     }
+    /*img_nosotros*/
+    .nosotros_img {
+      flex-direction: column;
+      align-items: center;
+    }
+    .nosotros_img img {
+      width: 80%; /* Ajusta el ancho según tus necesidades */
+      height: auto;
+      margin: 10px; /* Espacio entre imágenes */
+    }
   }
   /* 768px */
   @media (max-width: 768px) {
+    /*logo de bienvenida*/
+    .img_bienvenida img {
+      max-width: 80%;
+  }
+  /*img_nosotros*/
+  .nosotros_img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros_img img {
+    width: 60%; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin: 10px; /* Espacio entre imágenes */
+  }
     /*  logo */
     .logo {
       width: 8.12rem;
@@ -233,9 +270,31 @@
     .copyrigth-text {
       font-size: 1.12rem;
     }
+    .whatsapp-button{
+      right: 30px;
+    }
+    .iframe_soporte iframe {/*video DE SOPORTE*/
+      max-width:80%;
+  }
   }
   /* desde 320px  hasta 475px */
   @media (min-width: 320px) and (max-width: 475px) {
+      /*img_bienvenida*/
+      .img_bienvenida img {
+          max-width: 80%;
+      }
+    /*img_nosotros*/
+      .nosotros_img {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nosotros_img img {
+        width: 80%; /* Ajusta el ancho según tus necesidades */
+        height: auto;
+        margin: 10px; /* Espacio entre imágenes */
+      }
+    
+    
     /* items del carrito */
     .cart {
       width: 11rem;
@@ -271,7 +330,6 @@
     }
     .cart-total {
       @include flex(flex,space-around,baseline);
-
       margin: 5px;
       gap: 5px;
     }
@@ -312,7 +370,7 @@
     }
     .btn {
       font-size: 1rem;
-    }
+    }   
     /* logo y descripcion login */
     .login {
       font-size: 1rem;
@@ -320,11 +378,21 @@
       background-color: map-get($colores,sextario);
       color: map-get($colores,primario);
       text-align: center;
+      margin-top: 20px;
+    }
+    /*icon-usuario*/
+    .fa-user{
+      margin-top: 20px;
+      margin-right: 30px;
     }
     .icon {
-      font-size: 1rem;
+      font-size: 1.3rem;
       padding: 5px;
-      margin: 0 30px;
+      margin-top: 10px 3px;
+    }
+    /*icon-hamburguesa*/
+    .fa-bars-staggered {
+      margin-right:30px;
     }
     /* seccion hero o portada */
     .hero-title {
@@ -333,8 +401,8 @@
     }
     .hero-text {
       font-size: 1.18rem;
+      padding: 20px;
     }
-
     /* seccion acerca de  */
     .about-title {
       font-size: 1.25rem;
@@ -362,14 +430,19 @@
       border-radius: 10px;
     }
     .categorias > h2 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
     .title-cont {
       font-size: 1.12rem;
     }
     /* sección soporte */
     #Service {
-      margin-top: 20px;
+      margin-top: 0px;
     }
+    .whatsapp-button{
+      right: 30px;
+    }
+    .iframe_soporte iframe {/*video DE SOPORTE*/
+      max-width:80%;
   }
-  
+  }

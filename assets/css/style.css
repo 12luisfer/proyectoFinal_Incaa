@@ -60,7 +60,7 @@
 
 body {
   width: 100%;
-  background: linear-gradient(45deg, rgb(77, 17, 101), rgb(85, 9, 128), rgb(24, 23, 25), rgb(25, 22, 26));
+  background: linear-gradient(45deg, rgb(40, 38, 42), rgb(40, 39, 40), rgb(24, 23, 25), rgb(25, 22, 26));
   background-size: 400% 400%;
   position: relative;
   animation: cambiar 5s ease-in-out infinite;
@@ -72,9 +72,9 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: brown;
+  background: #71c71b;
   border-radius: 25px;
-  border: 2px solid rgb(222, 11, 11);
+  border: transparent;
 }
 
 .whatsapp-button {
@@ -128,9 +128,12 @@ body::-webkit-scrollbar-thumb {
 }
 .header .navbar .navbar-list .link a { /*links de mi navegador color*/
   font-size: 1.2rem;
-  color: #f30f9c;
+  color: #cfbcc8;
   text-align: center;
   text-decoration: none;
+}
+.header .navbar .navbar-list .link a:hover {
+  color: rgb(255, 251, 0);
 }
 
 .cont-btn {
@@ -138,7 +141,7 @@ body::-webkit-scrollbar-thumb {
 }
 .cont-btn .login { /*mi login estilo del link*/
   font-size: 1.56rem;
-  color: #7fff00;
+  color: rgb(255, 251, 0);
   background-color: transparent;
   text-decoration: none;
 }
@@ -185,9 +188,9 @@ body::-webkit-scrollbar-thumb {
 }
 #Hero .hero-title {
   text-align: center;
-  font-size: 3.12rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #7fff00;
+  color: #71c71b;
   margin-top: 180px;
   font-family: "Bowlby One SC", sans-serif;
 }
@@ -198,14 +201,14 @@ body::-webkit-scrollbar-thumb {
   margin-top: 20px;
   font-family: "Rakkas", serif;
 }
-
-.img_bienvenida {
+#Hero .img_bienvenida {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 80px;
 }
-.img_bienvenida img {
-  width: 500px;
+#Hero .img_bienvenida img {
+  width: 700px;
 }
 
 /* Acerca de nosotros  */
@@ -216,11 +219,12 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 45px;
 }
 #About .about-title {
   font-size: 2.5rem;
   text-align: center;
-  color: #7fff00;
+  color: #71c71b;
   margin-top: 210px;
   font-family: "Bowlby One SC", sans-serif;
 }
@@ -230,6 +234,19 @@ body::-webkit-scrollbar-thumb {
   margin-top: 30px;
   color: #fff;
   font-family: "Rakkas", serif;
+}
+
+.nosotros_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.nosotros_img img {
+  width: 500px;
+  height: 250px;
+  margin-left: 25px;
+  border: 10px rgb(0, 0, 0) solid;
 }
 
 /*  Productos */
@@ -247,7 +264,7 @@ body::-webkit-scrollbar-thumb {
 #Products .title-products-cont .products-title {
   font-size: 2.25rem;
   text-align: center;
-  color: #7fff00;
+  color: #71c71b;
   margin-top: 50px;
   font-family: "Bowlby One SC", sans-serif;
 }
@@ -260,7 +277,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.25rem;
   font-family: "Bowlby One SC", sans-serif;
   background-color: transparent;
-  color: #7fff00;
+  color: #71c71b;
   text-align: center;
   margin: 40px;
 }
@@ -282,7 +299,7 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  box-shadow: 0px 0px 17px 7px rgba(140, 112, 255, 0.82);
+  box-shadow: 0px 0px 37px 8px #71c71b;
 }
 
 #Mother,
@@ -315,8 +332,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.87rem;
   font-weight: 800;
   background-color: transparent;
-  color: rgba(0, 213, 255, 0.8941176471);
+  color: rgb(255, 251, 0);
   margin-top: 170px;
+  text-transform: uppercase;
 }
 #Mother .products-container,
 #Micros .products-container,
@@ -371,7 +389,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   font-weight: 800;
   color: #fff;
-  border: 5px red solid;
+  border: 3px solid #71c71b;
+  padding: 10px;
 }
 #Mother .products-container .card .card-text,
 #Micros .products-container .card .card-text,
@@ -400,7 +419,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   font-size: 1.37rem;
   font-weight: 800;
-  color: #7fff00;
+  color: #71c71b;
 }
 #Mother .products-container .card .card-btn,
 #Micros .products-container .card .card-btn,
@@ -413,14 +432,14 @@ body::-webkit-scrollbar-thumb {
 #Screen .products-container .card .card-btn {
   text-align: center;
   font-size: 1.87rem;
-  background-color: #ff4500;
-  color: #fff;
+  background-color: rgb(255, 251, 0);
+  color: black;
   cursor: pointer;
   border: 1px solid #fff;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 1px rgba(235, 227, 227, 0.7);
   margin: 15px 15px;
-  padding: 5px 5px;
+  padding: 0px 20px;
 }
 
 /*  Servicio Técnico(soporte) */
@@ -439,7 +458,7 @@ body::-webkit-scrollbar-thumb {
   max-width: 100%;
   text-align: center;
   font-size: 2.25rem;
-  color: #7fff00;
+  color: #71c71b;
   margin-top: 200px;
   font-family: "Bowlby One SC", sans-serif;
 }
@@ -473,7 +492,7 @@ body::-webkit-scrollbar-thumb {
   background-color: transparent;
   color: #fff;
   cursor: pointer;
-  border: 5px red solid;
+  border: 10px rgb(0, 0, 0) solid;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 1px #fff;
   margin: 15px 15px;
@@ -486,6 +505,16 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
   width: 12.5rem;
   color: rgb(255, 251, 0);
+}
+
+.iframe_soporte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iframe_soporte iframe {
+  width: 500px;
+  border: 10px rgb(0, 0, 0) solid;
 }
 
 /* Contacto */
@@ -507,7 +536,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.25rem;
   font-weight: 900;
   margin-top: 200px;
-  color: #7fff00;
+  color: #71c71b;
   font-family: "Bowlby One SC", sans-serif;
 }
 #Contact .info-container {
@@ -518,7 +547,6 @@ body::-webkit-scrollbar-thumb {
 }
 #Contact .info-container .contact-info-container .info-column {
   background-color: black;
-  border: 5px red solid;
   padding: 40px;
 }
 #Contact .info-container .contact-info-container .info-column h3 {
@@ -540,19 +568,19 @@ body::-webkit-scrollbar-thumb {
 #Contact .info-container .contact-info-container .info-column .icon-info {
   font-size: 1.87rem;
   text-decoration: none;
-  color: rgb(255, 251, 0);
+  color: #71c71b;
   margin-bottom: 15px;
 }
 #Contact .mapa {
-  width: 40%;
+  width: 70%;
   margin: 0 auto;
   display: block;
   border-radius: 8px;
-  border: 5px red solid;
+  border: 10px rgb(0, 0, 0) solid;
 }
 #Contact .mapa iframe {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 /*footer*/
@@ -684,7 +712,7 @@ body::-webkit-scrollbar-thumb {
   .icon { /*acomodo mi logo de login*/
     margin: 0 3px;
     background-color: transparent;
-    color: #7fff00;
+    color: rgb(255, 251, 0);
     font-size: 1.56rem;
     cursor: pointer;
   }
@@ -739,7 +767,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 700;
   }
   .cart-total span { /*el precio total*/
-    color: #7fff00;
+    color: #71c71b;
     font-weight: 400;
     font-size: 18px;
   }
@@ -750,11 +778,16 @@ body::-webkit-scrollbar-thumb {
     padding: 2px 5px;
     margin: 10px 0;
     border-radius: 50px;
-    box-shadow: 2px 2px 2px 1px #7fff00;
+    box-shadow: 2px 2px 2px 1px #71c71b;
     font-size: 1.37rem;
     font-weight: 400;
     background-color: transparent;
     color: #fff;
+  }
+  .nosotros_img img {
+    width: 80%;
+    height: 250px;
+    margin: 15px;
   }
 }
 /* 992px */
@@ -828,6 +861,15 @@ body::-webkit-scrollbar-thumb {
   .mapa iframe {
     height: 350px;
   }
+  /*img_nosotros*/
+  .nosotros_img {
+    flex-direction: row;
+  }
+  .nosotros_img img {
+    width: 50%;
+    height: 250px;
+    margin: 10px;
+  }
 }
 /* 827px */
 @media (max-width: 827px) {
@@ -846,9 +888,33 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     flex-direction: column;
   }
+  /*img_nosotros*/
+  .nosotros_img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros_img img {
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin: 10px; /* Espacio entre imágenes */
+  }
 }
 /* 768px */
 @media (max-width: 768px) {
+  /*logo de bienvenida*/
+  .img_bienvenida img {
+    max-width: 80%;
+  }
+  /*img_nosotros*/
+  .nosotros_img {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nosotros_img img {
+    width: 60%; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin: 10px; /* Espacio entre imágenes */
+  }
   /*  logo */
   .logo {
     width: 8.12rem;
@@ -909,9 +975,29 @@ body::-webkit-scrollbar-thumb {
   .copyrigth-text {
     font-size: 1.12rem;
   }
+  .whatsapp-button {
+    right: 30px;
+  }
+  .iframe_soporte iframe { /*video DE SOPORTE*/
+    max-width: 80%;
+  }
 }
 /* desde 320px  hasta 475px */
 @media (min-width: 320px) and (max-width: 475px) {
+  /*img_bienvenida*/
+  .img_bienvenida img {
+    max-width: 80%;
+  }
+  /*img_nosotros*/
+  .nosotros_img {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nosotros_img img {
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    height: auto;
+    margin: 10px; /* Espacio entre imágenes */
+  }
   /* items del carrito */
   .cart {
     width: 11rem;
@@ -999,13 +1085,23 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
     text-align: center;
     background-color: transparent;
-    color: #7fff00;
+    color: #71c71b;
     text-align: center;
+    margin-top: 20px;
+  }
+  /*icon-usuario*/
+  .fa-user {
+    margin-top: 20px;
+    margin-right: 30px;
   }
   .icon {
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 5px;
-    margin: 0 30px;
+    margin-top: 10px 3px;
+  }
+  /*icon-hamburguesa*/
+  .fa-bars-staggered {
+    margin-right: 30px;
   }
   /* seccion hero o portada */
   .hero-title {
@@ -1013,6 +1109,7 @@ body::-webkit-scrollbar-thumb {
   }
   .hero-text {
     font-size: 1.18rem;
+    padding: 20px;
   }
   /* seccion acerca de  */
   .about-title {
@@ -1041,14 +1138,20 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
   }
   .categorias > h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .title-cont {
     font-size: 1.12rem;
   }
   /* sección soporte */
   #Service {
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+  .whatsapp-button {
+    right: 30px;
+  }
+  .iframe_soporte iframe { /*video DE SOPORTE*/
+    max-width: 80%;
   }
 }
 /*login y registrase*/
@@ -1168,7 +1271,7 @@ input[type=submit] {
 }
 
 .link_login:hover {
-  color: #7fff00;
+  color: #71c71b;
 }
 
 input[type=submit]:hover {
