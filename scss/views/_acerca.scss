@@ -10,8 +10,7 @@
       text-align: center;
       color: map-get($colores,primario);
       margin-top: 210px;
-      font-family: $font-titulo;
-      
+      font-family: $font-titulo; 
     }
     .about-text {
       text-align: center;
@@ -20,12 +19,9 @@
       color: $color-tipografia;
       font-family: $font-texto;      
     }
-
   }
   .nosotros_img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend%flex-center;
     margin-top: 100px;
     img{
         width: 500px;

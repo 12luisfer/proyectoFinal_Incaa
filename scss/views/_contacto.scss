@@ -1,4 +1,3 @@
-/* Contacto */
 #Contact {
     @include flex-direccion(flex,column,center,wrap);
     margin-top: 70px;
@@ -19,7 +18,7 @@
     .info-container {
       @extend%flex-direccion;
       gap: 30px;
-      .contact-info-container {/*contenedor de todo mi info, menos el "contacto(H1)"*/
+      .contact-info-container {/*contenedor de todo mi info*/
         @extend%flex;
         gap: 80px;
         .info-column{
@@ -59,6 +58,5 @@
         height: 500px;
         }
     }
-
   }
 

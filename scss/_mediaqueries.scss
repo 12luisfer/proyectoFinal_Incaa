@@ -1,5 +1,4 @@
 /* Responsive Design*/
-/* 1200px */
 @media (max-width: 1200px) {
     /* animacion translate para cuando se utilice el check del cart-toggle */
     /* creo la animación */
@@ -334,7 +333,7 @@
       gap: 5px;
     }
     .cart-total p {
-      color: #fff;
+      color: $color-tipografia;
       font-size: 1.12rem;
       font-weight: 700;
     }

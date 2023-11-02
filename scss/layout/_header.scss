@@ -1,5 +1,4 @@
                                 /*HEADER*/
-/*header/navegador*/
 .header {
     position: fixed;
     width: map-get($porcentajes,fase10);
@@ -10,7 +9,7 @@
       width: 11.25rem;
       height: 9.37rem;
     }
-    .navbar {  /*navegador de la tienda/ el contenedor */
+    .navbar {  /*navegador de la tienda*/
       width: 90%;
       @include flex(flex,center,center);
       font-family: 'Nosifer', sans-serif;
@@ -18,7 +17,7 @@
         @include flex(flex,center,center);
         margin: 5px;
         gap: 15px;
-      .link a {  /*links de mi navegador color*/
+      .link a {  /*links navegador*/
       font-size: 1.2rem;
       color: map-get($colores,secundario);
       text-align: center;
@@ -40,7 +39,7 @@
       text-decoration: $decoracion;
     }
   }
-  .icon { /*mis iconos de carrito y login(la personita)*/
+  .icon { /*mis iconos de carrito y login*/
     margin: 0 30px;
     background-color:map-get($colores,sextario);
     color: $color-iconos;
@@ -51,7 +50,7 @@
   .overlay {
     position: absolute;
     top: 5.62rem;
-    left: 2;   /*iba 0 modifique a 2*/
+    left: 2;   
     height: 100vh;
     width: 300vh;
     z-index: 1;
@@ -60,7 +59,7 @@
     -webkit-backdrop-filter: blur(8px);
     display: $decoracion;
   }
-  /*mi menu de hamburguesa img*/
+  /*menu de hamburguesa img*/
   #menu-toggle:checked ~ .overlay {
     display: block;
   }

@@ -1,4 +1,4 @@
-/*  Servicio Técnico(soporte) */
+/* Servicio Técnico*/
 #Service {
   @include flex-soporte(flex, center,center,column,wrap);
     width: map-get($porcentajes,fase10);
@@ -55,7 +55,6 @@
         }     
       }   
     }
-
   }
   .iframe_soporte{
     display: flex;

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');/*tipografia navegador*/
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');/*titulos*/
 @import url('https://fonts.googleapis.com/css2?family=Rakkas&display=swap');/*texto*/
-
 * {
   margin: 0;
   padding: 0;
@@ -15,32 +14,32 @@ body{
   position: relative;
   animation: cambiar 5s ease-in-out infinite;
 }
+/*scroll*/
 body::-webkit-scrollbar {
   width: 10px;
   background-color:$color-tipografia ;
 }
-
 body::-webkit-scrollbar-thumb {
   background:map-get($colores,primario);
   border-radius: 25px;
   border:transparent;
 }
-
+/*icon-wsp*/
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   a {
     display: block;
-    color: #FFFfFF; /* Color de texto */
-    width: 60px; /* Ancho del botón */
-    height: 60px; /* Altura del botón */
-    border-radius: 50%; /* Para hacer un círculo */
+    color: #FFFfFF; 
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
     text-align: center;
     line-height: 60px;
     text-decoration: none;
     img {
-      width: 50px; /* Tamaño del icono de WhatsApp */
+      width: 50px; 
     }
     
   }
